@@ -11,6 +11,8 @@ const Login = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if(email.trim() === '') return toast.error('Email is required')
+    if(password.trim() === '') return toast.error('Password is required')
     const success = login(email, password);
     if (success) {
       toast.success("Login successful");
