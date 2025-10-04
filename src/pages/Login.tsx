@@ -75,6 +75,11 @@ const Login = () => {
               Sign In
             </button>
           </div>
+            <div className="text-xs text-gray-400 mt-5 md:mt-0">
+              <p>Trial Creds</p>
+              <p>ak@gmail.com</p>
+              <p>12345</p>
+            </div>
         </form>
       </div>
     </div>
